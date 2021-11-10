@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pokemon Type Checker</title>
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Droid+Sans">
+    <script src="./typing.js" defer></script>
+    <style>
+      .center {
+        margin: auto;
+        width: 45%;
+        padding: 10px;
+      }
+      button{
+        font-family:"Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+        font-size: medium;
+        border-color: grey;
+        color:white;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+        width: 90px;
+        padding: 5px;
+        margin: 5px;
+      }
+      *{
+        font-family:"Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1 class="center" style="text-align: center;">Pokemon Weakness Checker</h1>
+      <p>Select up to 2 types:</p>
+      <div class = "center">
+      <button id="bug" style="background-color: #ab2;">Bug</button>
+      <button id="dark" style="background-color: #754;">Dark</button>
+      <button id="dragon" style="background-color: #76e;">Dragon</button>
+      <button id="electric" style="background-color: #fc3;">Electric</button>
+      <button id="fairy" style="background-color: #e9e;">Fairy</button>
+      <button id="fighting" style="background-color: #b54;">Fighting</button>
+      <button id="fire" style="background-color: #f42;">Fire</button>
+      <button id="flying" style="background-color: #89f;">Flying</button>
+      <button id="ghost" style="background-color: #66b;">Ghost</button>
+      <button id="grass" style="background-color: #7c5;">Grass</button>
+      <button id="ground" style="background-color: #db5;">Ground</button>
+      <button id="ice" style="background-color: #6cf;">Ice</button>
+      <button id="normal" style="background-color: #aa9;">Normal</button>
+      <button id="poison" style="background-color: #a59;">Poison</button>
+      <button id="psychic" style="background-color: #f59;">Psychic</button>
+      <button id="rock" style="background-color: #ba6;">Rock</button>
+      <button id="steel" style="background-color: #aab;">Steel</button>
+      <button id="water" style="background-color: #39f;">Water</button>
+      <br>
+      <button class="center" id="clear" style="background-color: #000;">Clear Typing</button>
+      </div>
+      <br><br>
+      <b id="currType"></b>
+      <p id="doubleweakness"></p>
+      <p id="weakness">This Pokemon is weak to: None</p>
+      <p id="doubleresistance"></p>
+      <p id="resistance">This Pokemon is resistant to: None</p>
+      <p id="immunity">This Pokemon is immune to: None</p>
+    </div>
+  </body>
+</html>
