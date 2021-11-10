@@ -91,17 +91,16 @@ function setEventListener(id){
       finalimmune = [];
 
       //Go through the first type's weaknesses
-      console.log(type1weak);
       type1weak.forEach(function(type){
         
         if(type2weak.includes(type)){
           //If both weaknesses contain the same type, add it to the double weakness
           finaldoubleweak.push(type);
-          console.log(finaldoubleweak);
           type2weak.splice(type2weak.indexOf(type), 1);
         }
         else if(type2resistance.includes(type)){
-          //If the weakness of type1 is in the resistance of type2, skip over it
+          //If the weakness of type1 is in the resistance of type2, remove from the type 2 resistances
+          type2resistance.splice(type2resistance.indexOf(type), 1);
         }
         else if(type2immunity.includes(type)){
           finalimmune.push(type);
